@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: dscontroller
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dscontroller
+    spec:
+      containers:
+      - name: dscontroller
+        image: k8sdart:latest
+        imagePullPolicy: IfNotPresent
+        volumeMounts:
+        - name: lib
+          mountPath: /app/lib
+      volumes:
+      - name: lib
+        configMap:
+          name: dartk8s

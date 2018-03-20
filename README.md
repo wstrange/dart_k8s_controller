@@ -1,6 +1,6 @@
 # Work in progress 
 
-A small demo project to demonstrate that dart source code can be attached to a generic dart image via a 
+A small project to demonstrate that dart source code can be attached to a generic dart image via a 
 configmap. You could also attach source through other mechanisms. For example,using an
  init container to clone a git repo.
 

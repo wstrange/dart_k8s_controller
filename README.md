@@ -15,7 +15,7 @@ Build and tag a docker image:
 
 Create a configmap with our source code:
 
-`kubectl create configmap dartk8s --from-file=lib`
+`kubectl create configmap k8sdart --from-file=lib`
 
 
 Create a deployment:

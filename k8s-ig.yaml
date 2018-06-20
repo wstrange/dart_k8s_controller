@@ -1,0 +1,9 @@
+apiVersion: ctl.forgerock.com/v1
+kind: IGDeployment
+metadata:
+  name: ig
+  labels:
+    app: ig
+spec:
+  replicas: 1
+  image: gcr.io/engineering-devops/openig:6.5.0
